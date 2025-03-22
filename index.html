@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BruxinhaTech</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Link do Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            background: linear-gradient(to right, #dcdcdc, #ececec);
+            color: #2e2e2e;
+        }
+        .navbar { background-color: #a573b9; }
+        .hero { background: linear-gradient(to right, #dcdcdc, #ececec); padding: 100px 0; text-align: center; }
+        .hero h1 { font-size: 2.5rem; color: #4b0082; }
+        .who-am-i { background-color: #f9f9f9; padding: 50px 0; }
+        .services { padding: 50px 0; background-color: #ffffff; }
+        .footer { background-color: #d2a1e6; padding: 20px; text-align: center; color: rgb(0, 0, 0); }
+        .navbar-brand, .nav-link { color: white !important; }
+        h2 { color: #4b0082; }
+        h4 { color: #6a5acd; }
+        .btn-orcamento { background-color: #4b0082; color: white; margin-top: 10px; }
+        .btn-orcamento:hover { background-color: #6a5acd; }
+        .whatsapp-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #25d366;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: bounce 1.5s infinite ease-in-out;
+        }
+        .whatsapp-icon img {
+            width: 40px;
+            height: 40px;
+        }
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        /* Ajuste para alinhar os textos dos serviços */
+        .service-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            height: 100%;
+            transition: all 0.3s ease;
+        }
+        .service-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+        .service-box h4 {
+            margin-bottom: 15px;
+        }
+        .service-box p {
+            margin-bottom: 20px;
+        }
+
+        /* Estilos para o botão "Voltar ao Topo" */
+        .back-to-top {
+            position: fixed;
+            top: 10px;
+            left: 96%;
+            transform: translateX(-50%);
+            background-color: #4b0082;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            z-index: 1000;
+            display: none;
+            animation: bounce 1.5s infinite ease-in-out;
+        }
+
+        .back-to-top:hover {
+            background-color: #6a5acd;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/img/Bruxinha1png-removebg-preview.png" alt="Logo" height="125">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#quem-sou">Quem Sou</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <header id="home" class="hero">
+        <div class="container">
+            <h1>Assistência Técnica Especializada</h1>
+            <p>Nossa Assistência Técnica Especializada é focada exclusivamente na manutenção de computadores e notebooks, proporcionando serviços de alta qualidade que asseguram o desempenho ideal dos seus dispositivos. Contamos com uma equipe de profissionais altamente capacitados, que realizam diagnósticos precisos e reparos eficientes, garantindo que seus equipamentos voltem a operar com máxima performance.</p>
+        </div>
+    </header>
+
+    <section id="about" class="about-section" style="background: linear-gradient(to right, #dcdcdc, #ececec); padding: 0px 0; text-align: center;">
+        <div class="container">
+            <h2>Quem Sou</h2>
+            <p>Sou Isabelly Sobradiel, fundadora da BruxinhaTech. Desde sempre, sou apaixonada por tecnologia e busco, com dedicação, oferecer soluções práticas e eficazes para os desafios que surgem no dia a dia com computadores e notebooks. Atualmente, estou me formando em Tecnologia da Informação no SENAC, o que tem me proporcionado uma base sólida e me impulsionado a expandir ainda mais meu conhecimento na área.</p>
+            <p>Minha missão é proporcionar um atendimento personalizado e especializado, para garantir que seus dispositivos não só funcionem de maneira otimizada, mas também tenham sua vida útil e desempenho prolongados. Cada atendimento é feito com carinho e atenção, porque acredito que a tecnologia pode e deve ser uma aliada no cotidiano de todos.</p>
+        </div>
+    </section>
+
+    <!-- Seção Serviços -->
+    <section id="services" class="services container text-center" style="background: linear-gradient(to right, #dcdcdc, #ececec); padding: 100px 0;">
+        <h2>Nossos Serviços</h2>
+        <p>Aqui estão os principais serviços que oferecemos para garantir o funcionamento perfeito dos seus dispositivos:</p>
+        <div class="row mt-4">
+            <div class="col-md-6 mb-4">
+                <div class="service-box">
+                    <h4>Manutenção de Notebooks</h4>
+                    <p>Diagnóstico, reparo e manutenção de notebooks para garantir o máximo desempenho e longevidade.</p>
+                    <a href="https://wa.me/5518988285791?text=Olá! Gostaria de um orçamento para manutenção de notebooks." class="btn btn-orcamento" target="_blank">Solicitar Orçamento</a>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="service-box">
+                    <h4>Formatação e Otimização</h4>
+                    <p>Realizamos a formatação do seu dispositivo, instalação do sistema operacional e otimização para um melhor desempenho.</p>
+                    <a href="https://wa.me/5518988285791?text=Olá! Gostaria de um orçamento para formatação e otimização." class="btn btn-orcamento" target="_blank">Solicitar Orçamento</a>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-6 mb-4">
+                <div class="service-box">
+                    <h4>Suporte Remoto</h4>
+                    <p>Oferecemos suporte remoto para resolução de problemas de software de forma rápida e eficiente.</p>
+                    <a href="https://wa.me/5518988285791?text=Olá! Gostaria de um orçamento para suporte remoto." class="btn btn-orcamento" target="_blank">Solicitar Orçamento</a>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="service-box">
+                    <h4>Limpeza Interna de Computadores</h4>
+                    <p>Realizamos a limpeza interna do seu computador ou notebook, removendo poeira e sujeira acumulada que pode comprometer o funcionamento e aumentar o risco de falhas.</p>
+                    <a href="https://wa.me/5518988285791?text=Olá! Gostaria de um orçamento para limpeza interna de computadores." class="btn btn-orcamento" target="_blank">Solicitar Orçamento</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container text-center mt-5">
+        <h2>Entre em Contato</h2>
+        <p>Email: <a href="mailto:isabellysobradiiel@gmail.com?subject=Orçamento&body=Olá, gostaria de saber mais sobre seus serviços.">isabellysobradiiel@gmail.com</a></p>
+    
+        <div class="social-links mt-3">
+            <a href="https://www.instagram.com/isah_sobradiel" target="_blank" class="btn btn-outline-dark me-3">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 30px; height: 30px;">
+            </a>
+            <a href="https://www.youtube.com/@isahsobradiel" target="_blank" class="btn btn-outline-dark me-3">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 30px; height: 30px;">
+            </a>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <p>&copy; 2025 Isabelly Sobradiel - Todos os direitos reservados.</p>
+    </footer>
+
+    <div class="whatsapp-icon">
+        <a href="https://wa.me/5518988285791?text=Olá! Gostaria de mais informações." target="_blank">
+            <i class="fab fa-whatsapp" style="font-size: 40px; color: white;"></i>
+        </a>
+    </div>
+
+    <!-- Botão Voltar ao topo -->
+    <button onclick="scrollToTop();" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-TE3x6Q6sK6yZnBKwPVwNK6wvV0p2Rx45XYA4+xQFdga6eHp5HZoHcm4aG5mfKtQK" crossorigin="anonymous"></script>
+    <script>
+        // Função para rolar até o topo quando o botão for clicado
+        function scrollToTop() {
+            document.body.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        // Exibir/ocultar o botão dependendo da rolagem
+        var backToTopButton = document.querySelector(".back-to-top");
+
+        window.onscroll = function() {
+            if (window.scrollY > 100) { // Exibe o botão se a página foi rolada para baixo
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        };
+
+        // Inicialmente, o botão está oculto
+        backToTopButton.style.display = "none";
+    </script>
+</body>
+</html>
