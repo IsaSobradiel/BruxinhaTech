@@ -15,7 +15,7 @@
             color: #2e2e2e;
         }
         .navbar { background-color: #a573b9; }
-        .hero { background: linear-gradient(to right, #dcdcdc, #ececec); padding: 100px 0; text-align: center; }
+        .hero { background: linear-gradient(to right, #dcdcdc, #ececec); padding: 100px 0; text-align: left; font-size: 1.3rem;}
         .hero h1 { font-size: 2.5rem; color: #4b0082; }
         .who-am-i { background-color: #f9f9f9; padding: 50px 0; }
         .services { padding: 50px 0; background-color: #ffffff; }
@@ -105,13 +105,20 @@
         .back-to-top:hover {
             background-color: #6a5acd;
         }
+        .navbar-brand img {
+        max-width: 100%;
+        height: auto;
+    }
+    .nav-link {
+        font-size: 1.5rem;
+    }
     </style>
 </head>
 <body>
     
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
                 <img src="img/Logo.png" alt="Logo" height="125">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -120,7 +127,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#quem-sou">Quem Sou</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Quem Sou</a></li>
                     <li class="nav-item"><a class="nav-link" href="#services">Serviços</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
                 </ul>
@@ -130,58 +137,94 @@
     
     <header id="home" class="hero">
         <div class="container">
-            <h1>Assistência Técnica Especializada</h1>
-            <p>Nossa Assistência Técnica Especializada é focada exclusivamente na manutenção de computadores e notebooks, proporcionando serviços de alta qualidade que asseguram o desempenho ideal dos seus dispositivos. Contamos com uma equipe de profissionais altamente capacitados, que realizam diagnósticos precisos e reparos eficientes, garantindo que seus equipamentos voltem a operar com máxima performance.</p>
+            <h1 class="text-center">Assistência Técnica Especializada</h1>
+            <p class="text-justify">Nossa Assistência Técnica Especializada é focada exclusivamente na manutenção de computadores e notebooks, proporcionando serviços de alta qualidade que asseguram o desempenho ideal dos seus dispositivos. Contamos com uma equipe de profissionais altamente capacitados, que realizam diagnósticos precisos e reparos eficientes, garantindo que seus equipamentos voltem a operar com máxima performance.</p>
         </div>
     </header>
 
-    <section id="about" class="about-section" style="background: linear-gradient(to right, #dcdcdc, #ececec); padding: 0px 0; text-align: center;">
+    <section id="about" class="about-section" style="font-size: 1.3rem;">
         <div class="container">
-            <h2>Quem Sou</h2>
-            <p>Sou Isabelly Sobradiel, fundadora da BruxinhaTech. Desde sempre, sou apaixonada por tecnologia e busco, com dedicação, oferecer soluções práticas e eficazes para os desafios que surgem no dia a dia com computadores e notebooks. Atualmente, estou me formando em Tecnologia da Informação no SENAC, o que tem me proporcionado uma base sólida e me impulsionado a expandir ainda mais meu conhecimento na área.</p>
-            <p>Minha missão é proporcionar um atendimento personalizado e especializado, para garantir que seus dispositivos não só funcionem de maneira otimizada, mas também tenham sua vida útil e desempenho prolongados. Cada atendimento é feito com carinho e atenção, porque acredito que a tecnologia pode e deve ser uma aliada no cotidiano de todos.</p>
+            <h2 class="text-center">Quem Sou</h2>
+            <div class="row">
+                <div class="col-md-12 text-center mb-4">
+                    <!-- Foto centralizada e formatada em círculo -->
+                    <img src="img/eu.jpg" alt="Foto de Isabelly Sobradiel" class="img-fluid rounded-circle" style="max-width: 200px; height: auto;">
+                    <!-- Nome abaixo da foto -->
+                    <p class="mt-2"><strong>Isabelly Sobradiel, fundadora do BruxinhaTech.</strong></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Sou Isabelly Sobradiel, fundadora da BruxinhaTech. Desde sempre, sou apaixonada por tecnologia e busco, com dedicação, oferecer soluções práticas e eficazes para os desafios que surgem no dia a dia com computadores e notebooks. Atualmente, estou me formando em Tecnologia da Informação no SENAC, o que tem me proporcionado uma base sólida e me impulsionado a expandir ainda mais meu conhecimento na área.</p>
+                    <p>Minha missão é proporcionar um atendimento personalizado e especializado, para garantir que seus dispositivos não só funcionem de maneira otimizada, mas também tenham sua vida útil e desempenho prolongados. Cada atendimento é feito com carinho e atenção, porque acredito que a tecnologia pode e deve ser uma aliada no cotidiano de todos.</p>
+                </div>
+            </div>
         </div>
     </section>
+    
 
     <!-- Seção Serviços -->
-    <section id="services" class="services container text-center" style="background: linear-gradient(to right, #dcdcdc, #ececec); padding: 100px 0;">
-        <h2>Nossos Serviços</h2>
-        <p>Aqui estão os principais serviços que oferecemos para garantir o funcionamento perfeito dos seus dispositivos:</p>
-        <div class="row mt-4">
-            <div class="col-md-6 mb-4">
-                <div class="service-box">
-                    <h4>Manutenção de Notebooks</h4>
-                    <p>Diagnóstico, reparo e manutenção de notebooks para garantir o máximo desempenho e longevidade.</p>
-                    <a href="https://wa.me/5518988285791?text=Olá! Gostaria de um orçamento para manutenção de notebooks." class="btn btn-orcamento" target="_blank">Solicitar Orçamento</a>
+    <section id="services" class="services" style="background: linear-gradient(to right, #dcdcdc, #ececec); font-size: 1.3rem;">
+        <div class="container text-center" >
+            <h2>Nossos Serviços</h2>
+            <p>Garantimos o funcionamento perfeito dos seus dispositivos.</p>
+            <div class="row mt-4">
+                <div class="col-md-4 mb-4">
+                    <div class="service-box">
+                        <!-- Adicionar imagem do serviço -->
+                        <img src="img/Manutenção.png" alt="Serviço 1" class="img-fluid mb-3" style="max-width: 100%; height: auto;">
+                        <h4>Manutenção de Computadores, Notebooks e Netbooks</h4>
+                        <p>Atendemos pessoas físicas e jurídicas. Realizamos suporte em computadores, notebooks e netbooks de todas as marcas. Trocamos telas de notebooks, consertamos teclados falhando, consertamos fontes de alimentação e muito mais.</p>
+                        <a href="https://wa.me/5518988285791?text=Olá! Gostaria de um orçamento para manutenção de computadores." class="btn btn-orcamento" target="_blank">Solicitar Orçamento</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-box">
+                        <img src="img/operacional.png" alt="Serviço 2" class="img-fluid mb-3" style="max-width: 100%; height: auto;">
+                        <h4>Instalação, Manutenção e Suporte em Sistemas Operacionais</h4>
+                        <p>A utilização de técnicas de manutenção do seu sistema operacional garante que seu equipamento funcione sempre da maneira adequada. Muitas vezes uma manutenção em seu sistema operacional pode evitar uma formatação.</p>
+                        <a href="https://wa.me/5518988285791?text=Olá! Gostaria de um orçamento para manutenção em sistemas operacionais." class="btn btn-orcamento" target="_blank">Solicitar Orçamento</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-box">
+                        <img src="img/redes.png" alt="Serviço 3" class="img-fluid mb-3" style="max-width: 100%; height: auto;">
+                        <h4>Instalação, Configuração e Manutenção de Redes</h4>
+                        <p>Instalação e suporte em redes cabeadas ou wireless. Realizamos compartilhamento de internet. Solicite um orçamento sem compromisso!</p>
+                        <a href="https://wa.me/5518988285791?text=Olá! Gostaria de um orçamento para instalação de redes." class="btn btn-orcamento" target="_blank">Solicitar Orçamento</a>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-6 mb-4">
-                <div class="service-box">
-                    <h4>Formatação e Otimização</h4>
-                    <p>Realizamos a formatação do seu dispositivo, instalação do sistema operacional e otimização para um melhor desempenho.</p>
-                    <a href="https://wa.me/5518988285791?text=Olá! Gostaria de um orçamento para formatação e otimização." class="btn btn-orcamento" target="_blank">Solicitar Orçamento</a>
+            <div class="row mt-4">
+                <div class="col-md-4 mb-4">
+                    <div class="service-box">
+                        <img src="img/hardesoft.png" alt="Serviço 4" class="img-fluid mb-3" style="max-width: 100%; height: auto;">
+                        <h4>Instalação, Configuração e Manutenção de Hardware e Software</h4>
+                        <p>Realizamos instalação, configuração e manutenção de softwares, hardwares, formatações, limpeza de discos, particionamentos, entre outros. Fazemos backup de seus arquivos.</p>
+                        <a href="https://wa.me/5518988285791?text=Olá! Gostaria de um orçamento para manutenção de hardware e software." class="btn btn-orcamento" target="_blank">Solicitar Orçamento</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-box">
+                        <img src="img/preventiva.png" alt="Serviço 5" class="img-fluid mb-3" style="max-width: 100%; height: auto;">
+                        <h4>Manutenção Preventiva e Corretiva</h4>
+                        <p>Em qualquer manutenção corretiva realizada em nossa empresa, já aplicamos a manutenção preventiva. Realize uma manutenção preventiva a cada 6 meses e evite futuros problemas.</p>
+                        <a href="https://wa.me/5518988285791?text=Olá! Gostaria de um orçamento para manutenção preventiva e corretiva." class="btn btn-orcamento" target="_blank">Solicitar Orçamento</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-box">
+                        <img src="img/virus.png" alt="Serviço 6" class="img-fluid mb-3" style="max-width: 100%; height: auto;">
+                        <h4>Detecção de Vírus, Remoção e Proteção</h4>
+                        <p>Fazemos a remoção de vírus do seu equipamento e deixamos ele protegido para garantir que o seu dispositivo funcione de forma segura e eficiente.</p>
+                        <a href="https://wa.me/5518988285791?text=Olá! Gostaria de um orçamento para detecção e remoção de vírus." class="btn btn-orcamento" target="_blank">Solicitar Orçamento</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="row mt-4">
-            <div class="col-md-6 mb-4">
-                <div class="service-box">
-                    <h4>Suporte Remoto</h4>
-                    <p>Oferecemos suporte remoto para resolução de problemas de software de forma rápida e eficiente.</p>
-                    <a href="https://wa.me/5518988285791?text=Olá! Gostaria de um orçamento para suporte remoto." class="btn btn-orcamento" target="_blank">Solicitar Orçamento</a>
-                </div>
-            </div>
-            <div class="col-md-6 mb-4">
-                <div class="service-box">
-                    <h4>Limpeza Interna de Computadores</h4>
-                    <p>Realizamos a limpeza interna do seu computador ou notebook, removendo poeira e sujeira acumulada que pode comprometer o funcionamento e aumentar o risco de falhas.</p>
-                    <a href="https://wa.me/5518988285791?text=Olá! Gostaria de um orçamento para limpeza interna de computadores." class="btn btn-orcamento" target="_blank">Solicitar Orçamento</a>
-                </div>
-            </div>
-        </div>
-    </section>
+    </section>    
 
-    <section id="contact" class="container text-center mt-5">
+    <section id="contact" class="container text-center mt-5"; style="font-size: 1.5rem;">
         <h2>Entre em Contato</h2>
         <p>Email: <a href="mailto:isabellysobradiiel@gmail.com?subject=Orçamento&body=Olá, gostaria de saber mais sobre seus serviços.">isabellysobradiiel@gmail.com</a></p>
     
